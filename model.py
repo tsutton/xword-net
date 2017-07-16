@@ -5,9 +5,10 @@ from rnn_cells import MyGRUCell, MyLSTMCell, SkipZerosWrapper
 import numpy as np
 import datetime
 
-num_batches = 50000
-
 batch_size = 64
+num_batches_per_epoch = int(1431406/batch_size)
+num_batches = 2*num_batches_per_epoch
+
 answer_length = 5
 num_chars = 26
 encoder_hidden_dim = 75

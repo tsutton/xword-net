@@ -163,7 +163,7 @@ class Clues5Generator:
         if self.num_left_in_epoch < self.batch_size:
             tmp = list(range(self.num_clues))
             random.shuffle(tmp)
-            self.left_in_epoch.append(tmp)
+            self.left_in_epoch += tmp
             self.num_left_in_epoch += self.num_clues
             
         x = np.zeros( (self.batch_size, self.vector_length, 300), dtype=np.float32)
@@ -186,7 +186,7 @@ class Clues5Generator:
         if self.num_left_in_epoch < self.batch_size:
             tmp = list(range(self.num_clues))
             random.shuffle(tmp)
-            self.left_in_epoch.append(tmp)
+            self.left_in_epoch += tmp
             self.num_left_in_epoch += self.num_clues
             
         x = np.zeros( (self.batch_size, self.vector_length, 300), dtype=np.float32)
