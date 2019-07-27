@@ -1,3 +1,6 @@
+# This project is inactive
+I may pick it up again in the future, but probably not. My interests have moved away from NLP via neural networks, and there are a lot of challenges associated to the machine learning problem here at any rate.
+
 # xword-net
 A neural network for solving crossword puzzles. The current scope is limited to clues whose answer is exactly 5, as I haven't fully figured out how I want to handle training with variable-length output.
 
